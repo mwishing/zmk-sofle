@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - '&td_bspc_altbspc'
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&td_lshift_capsword'
   - Z
   - X
   - C
@@ -63,7 +63,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - layer2
-  - $$mdi:apple-keyboard-shift$$
+  - '&td_rshift_capsword'
   - $$mdi:backspace-reverse-outline$$
   layer1:
   - {t: '`', s: '~'}
