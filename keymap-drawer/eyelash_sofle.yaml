@@ -38,8 +38,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - '&td_semi_colon'
+  - '&td_apos_dquote'
   - '&td_lshift_capsword'
   - Z
   - X
