@@ -38,17 +38,6 @@
     };
 
     macros {
-        alt_bspc: alt_bspc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LEFT_ALT>
-                , <&macro_tap &kp BACKSPACE>
-                , <&macro_release &kp LEFT_ALT>;
-
-            label = "ALT_BSPC";
-        };
-
         shift_semi: shift_semi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -98,13 +87,6 @@
             bindings = <&kp RIGHT_SHIFT>, <&caps_word>;
         };
 
-        td_bspc_altbspc: td_bspc_altbspc {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&kp BACKSPACE>, <&alt_bspc>;
-        };
-
         td_semi_colon: td_semi_colon {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -134,7 +116,7 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &td_bspc_altbspc
+&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &td_semi_colon    &td_apos_dquote
 &td_lshift_capsword   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
