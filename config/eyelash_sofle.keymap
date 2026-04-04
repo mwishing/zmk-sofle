@@ -27,6 +27,11 @@
 };
 
 &soft_off { hold-time-ms = <2000>; };
+&sk {
+    release-after-ms = <500>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
 
 / {
     scroll_encoder: scroll_encoder {
