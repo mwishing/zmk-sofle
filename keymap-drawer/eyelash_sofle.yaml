@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - '&td_semi_colon'
+  - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_lshift_capsword'
   - Z
@@ -49,10 +49,10 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - '&td_comma_lt'
-  - '&td_dot_gt'
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '&td_apos_dquote'
+  - {t: '''', s: '"'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -139,9 +139,9 @@ layers:
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
+  - F7
+  - F8
+  - F9
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
