@@ -59,6 +59,7 @@
         };
     };
 
+    macros {
         scrl_down_hold: scrl_down_hold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -137,7 +138,9 @@
             label = "SHIFT_MCLK";
         };
     };
+};
 
+/ {
     behaviors {
         lt_layer_tap_df: lt_layer_tap_df {
             compatible = "zmk,behavior-hold-tap";
@@ -264,7 +267,7 @@
 &kp C_MUTE  &mt LEFT_CONTROL SPACE  &mt LEFT_ALT SPACE      &mt LEFT_GUI SPACE  &lt 4 MINUS  &lt 1 EQUAL    &kp ENTER        &mt LEFT_SHIFT ENTER  &lt 3 DELETE  &lt 4 SPACE  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_CONTROL RIGHT_BRACKET
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "LAYER0";
         };
 
